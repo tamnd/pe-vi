@@ -12,13 +12,6 @@ title: Giới thiệu
 Trang này dịch đề bài sang tiếng Việt để người đọc dễ theo dõi hơn. Mỗi bài giữ lại phần tiếng Anh gốc bên cạnh bản dịch để tiện đối chiếu.
 
 ***
-## Người dịch
-
-**Duc-Tam Nguyen**, kỹ sư phần mềm tại Hà Nội.
-
-Blog: [tamnd.github.io](https://tamnd.github.io)
-
-***
 ## Nhật ký
 
 2026-05-04: Ra mắt với đầy đủ 994 bài toán.
