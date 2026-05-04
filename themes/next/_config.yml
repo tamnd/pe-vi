@@ -31,7 +31,7 @@ custom_file_path:
   #bodyEnd: source/_data/body-end.swig
   #variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
-  #style: source/_data/styles.styl
+  style: source/_data/styles.styl
 
 
 # ---------------------------------------------------------------
@@ -67,7 +67,7 @@ footer:
   copyright: Project Euler | Tiếng Việt
 
   # Powered by Hexo & NexT
-  powered: true
+  powered: false
 
   # Beian ICP and gongan information for Chinese users. See: http://www.beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
@@ -636,16 +636,13 @@ livere_uid: # <your_uid>
 # Gitalk
 # For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk
 gitalk:
-  enable: true
-  github_id: pe-cn
-  repo: pe-cn-comments # Repository name to store issues
-  client_id: 4ba99a8839c5e7dde683 # GitHub Application Client ID
-  client_secret: 3984f7cad409553d6afde8dbc2c08fc425e7bbdc # GitHub Application Client Secret
-  admin_user: sx349 # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
-  distraction_free_mode: true # Facebook-like distraction free mode
-  # Gitalk's display language depends on user's browser or system environment
-  # If you want everyone visiting your site to see a uniform language, you can set a force language value
-  # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
+  enable: false
+  github_id:
+  repo:
+  client_id:
+  client_secret:
+  admin_user:
+  distraction_free_mode: false
   language:
 
 
@@ -826,7 +823,7 @@ mermaid:
 # Use velocity to animate everything.
 # For more information: http://velocityjs.org
 motion:
-  enable: true
+  enable: false
   async: false
   transition:
     # Transition variants:
