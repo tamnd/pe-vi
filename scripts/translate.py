@@ -135,12 +135,13 @@ def apply_translation(path: Path, n: int, vi_title: str, vi_body: str, dry_run: 
     """Replace translation section with Vietnamese. Returns True if file changed."""
     parsed = parse_post(path)
     parts = parsed["parts"]
-    if len(parts) < 4:
+    if len(parts) < 3:
         print(f"  [SKIP] {path.name}: unexpected structure ({len(parts)} parts)")
         return False
 
-    vi_section = f"## **{vi_title}**\n\n{vi_body}\n"
-    new_text = "\n***\n".join(parts[:3]) + "\n***\n" + vi_section + "\n***\n"
+    original_link = f"[Xem đề gốc (tiếng Anh)](https://projecteuler.net/problem={n})"
+    vi_section = f"{original_link}\n\n## **{vi_title}**\n\n{vi_body}\n"
+    new_text = "\n***\n".join(parts[:2]) + "\n***\n" + vi_section + "\n***\n"
     new_text = new_text.replace("﻿", "")  # strip BOM
 
     if parsed["normalized"].replace("﻿", "") == new_text:
