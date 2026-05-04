@@ -6,10 +6,9 @@
 <script>
 (function() {
   var actions = document.getElementById('post-md-actions');
-  var links = document.querySelectorAll('.post-body a[href*="projecteuler.net/problem="]');
-  for (var i = 0; i < links.length; i++) {
-    var p = links[i].closest('p');
-    if (p) { p.parentNode.insertBefore(actions, p); break; }
+  var h1 = document.querySelector('.post-body h1');
+  if (h1 && h1.nextSibling) {
+    h1.parentNode.insertBefore(actions, h1.nextSibling);
   }
 })();
 
