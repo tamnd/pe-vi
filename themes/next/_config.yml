@@ -414,7 +414,7 @@ font:
   enable: true
 
   # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
-  host:
+  host: https://fonts.googleapis.com
 
   # Font options:
   # `external: true` will load this font family from `host` above.
@@ -424,25 +424,25 @@ font:
   # Global font settings used for all elements inside <body>.
   global:
     external: true
-    family: Lato
+    family: Be Vietnam Pro
     size:
 
   # Font settings for site title (.site-title).
   title:
     external: true
-    family: Lato', 'Microsoft Yahei Light
+    family: Be Vietnam Pro
     size:
 
   # Font settings for headlines (<h1> to <h6>).
   headings:
     external: true
-    family: Cambria', 'Microsoft Yahei Light
+    family: Be Vietnam Pro
     size:
 
   # Font settings for posts (.post-body).
   posts:
     external: true
-    family: Verdana', Lato, 'Microsoft Yahei Light
+    family: Be Vietnam Pro
 
   # Font settings for <code> and code blocks.
   codes:
